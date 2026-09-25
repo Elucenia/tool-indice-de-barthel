@@ -1,0 +1,134 @@
+[
+  {
+    "label": "Totalmente independente: 100",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "score": 100,
+      "level": "low",
+      "verdict": "Independente"
+    },
+    "originalInput": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Independente exceto escadas com ajuda: 95 (leve)",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "5"
+    },
+    "expected": {
+      "score": 95,
+      "level": "low",
+      "verdict": "leve"
+    },
+    "originalInput": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "5"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Hemiparesia após AVC: 65 (moderada)",
+    "input": {
+      "alim": "10",
+      "banho": "0",
+      "higiene": "5",
+      "vestir": "5",
+      "intestino": "10",
+      "bexiga": "5",
+      "vaso": "5",
+      "transf": "10",
+      "mobil": "10",
+      "escadas": "5"
+    },
+    "expected": {
+      "score": 65,
+      "level": "mid",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "alim": "10",
+      "banho": "0",
+      "higiene": "5",
+      "vestir": "5",
+      "intestino": "10",
+      "bexiga": "5",
+      "vaso": "5",
+      "transf": "10",
+      "mobil": "10",
+      "escadas": "5"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Acamado, come com ajuda, continência parcial: 15 (total)",
+    "input": {
+      "alim": "5",
+      "banho": "0",
+      "higiene": "0",
+      "vestir": "0",
+      "intestino": "5",
+      "bexiga": "5",
+      "vaso": "0",
+      "transf": "0",
+      "mobil": "0",
+      "escadas": "0"
+    },
+    "expected": {
+      "score": 15,
+      "level": "high",
+      "verdict": "total"
+    },
+    "originalInput": {
+      "alim": "5",
+      "banho": "0",
+      "higiene": "0",
+      "vestir": "0",
+      "intestino": "5",
+      "bexiga": "5",
+      "vaso": "0",
+      "transf": "0",
+      "mobil": "0",
+      "escadas": "0"
+    },
+    "expandedZeroOptions": []
+  }
+]

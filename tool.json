@@ -1,0 +1,421 @@
+{
+  "tool": {
+    "id": "indice-de-barthel",
+    "title": "Índice de Barthel",
+    "short": "Independência nas atividades básicas de vida diária",
+    "spec": [
+      "medicina-fisica-e-reabilitacao",
+      "geriatria",
+      "neurologia"
+    ],
+    "tier": 1,
+    "desc": "Índice de Barthel: independência em 10 atividades básicas de vida diária (0 a 100), com a classificação do grau de dependência de Shah.",
+    "lead": "Mede a independência em 10 atividades básicas de vida diária. Usado na reabilitação, após AVC e na avaliação geriátrica.",
+    "fields": [
+      [
+        "alim",
+        "Alimentação",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Incapaz",
+            "5": "5 – Precisa de ajuda (cortar, passar manteiga)",
+            "10": "10 – Independente"
+          }
+        }
+      ],
+      [
+        "banho",
+        "Banho",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Dependente",
+            "5": "5 – Independente"
+          }
+        }
+      ],
+      [
+        "higiene",
+        "Higiene pessoal (rosto, cabelo, dentes, barba)",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Precisa de ajuda",
+            "5": "5 – Independente"
+          }
+        }
+      ],
+      [
+        "vestir",
+        "Vestir-se",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Dependente",
+            "5": "5 – Precisa de ajuda, mas faz cerca de metade sozinho",
+            "10": "10 – Independente (inclui botões, zíper, cadarços)"
+          }
+        }
+      ],
+      [
+        "intestino",
+        "Controle intestinal",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Incontinente (ou precisa de enemas)",
+            "5": "5 – Acidente ocasional",
+            "10": "10 – Continente"
+          }
+        }
+      ],
+      [
+        "bexiga",
+        "Controle vesical",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Incontinente ou cateterizado sem conseguir manejar",
+            "5": "5 – Acidente ocasional",
+            "10": "10 – Continente"
+          }
+        }
+      ],
+      [
+        "vaso",
+        "Uso do vaso sanitário",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Dependente",
+            "5": "5 – Precisa de alguma ajuda",
+            "10": "10 – Independente"
+          }
+        }
+      ],
+      [
+        "transf",
+        "Transferência (cama–cadeira)",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Incapaz, sem equilíbrio sentado",
+            "5": "5 – Grande ajuda (1 ou 2 pessoas), consegue sentar",
+            "10": "10 – Pequena ajuda (verbal ou física)",
+            "15": "15 – Independente"
+          }
+        }
+      ],
+      [
+        "mobil",
+        "Mobilidade em superfície plana",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Imóvel ou menos de 50 m",
+            "5": "5 – Independente em cadeira de rodas por mais de 50 m",
+            "10": "10 – Anda com ajuda de uma pessoa mais de 50 m",
+            "15": "15 – Anda sozinho mais de 50 m (pode usar bengala)"
+          }
+        }
+      ],
+      [
+        "escadas",
+        "Escadas",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Incapaz",
+            "5": "5 – Precisa de ajuda ou supervisão",
+            "10": "10 – Independente"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Índice de Barthel",
+      "unit": "de 100",
+      "bands": [
+        [
+          0,
+          "high",
+          "Dependência total (0 a 20)",
+          ""
+        ],
+        [
+          21,
+          "high",
+          "Dependência grave (21 a 60)",
+          ""
+        ],
+        [
+          61,
+          "mid",
+          "Dependência moderada (61 a 90)",
+          ""
+        ],
+        [
+          91,
+          "low",
+          "Dependência leve (91 a 99)",
+          ""
+        ],
+        [
+          100,
+          "low",
+          "Independente (100)",
+          "Pontuação máxima não significa viver sozinho com segurança: o índice não avalia atividades instrumentais, cognição nem segurança."
+        ]
+      ]
+    },
+    "formula": "<p>Soma das 10 atividades, em múltiplos de 5: alimentação, vestir, intestino, bexiga, vaso e escadas (0 a 10); transferência e mobilidade (0 a 15); banho e higiene (0 a 5). Total: 0 a 100.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Grau de dependência (Shah 1989)"
+      ],
+      [
+        "0 a 20",
+        "Total"
+      ],
+      [
+        "21 a 60",
+        "Grave"
+      ],
+      [
+        "61 a 90",
+        "Moderada"
+      ],
+      [
+        "91 a 99",
+        "Leve"
+      ],
+      [
+        "100",
+        "Independente"
+      ]
+    ],
+    "tips": [
+      "Pontue o que o paciente <strong>faz</strong> no dia a dia (desempenho real), não o que ele seria capaz de fazer; use a informação do cuidador ou da enfermagem quando necessário.",
+      "Supervisão por questão de segurança já conta como “precisa de ajuda”.",
+      "O índice tem efeito teto: pacientes com Barthel 100 podem ter limitações importantes em atividades instrumentais (use a escala de Lawton para essas).",
+      "Após o AVC, Barthel ≥ 95 costuma ser usado como desfecho de independência funcional; a escala foi validada no Brasil junto com a NIHSS e a Rankin."
+    ],
+    "sources": [
+      [
+        "Mahoney FI, Barthel DW. Functional evaluation: the Barthel Index. Md State Med J, 1965.",
+        "https://pubmed.ncbi.nlm.nih.gov/14258950/"
+      ],
+      [
+        "Shah S, Vanclay F, Cooper B. Improving the sensitivity of the Barthel Index for stroke rehabilitation. J Clin Epidemiol, 1989.",
+        "https://doi.org/10.1016/0895-4356(89)90065-6"
+      ],
+      [
+        "Minosso JSM et al. Validação, no Brasil, do Índice de Barthel em idosos atendidos em ambulatórios. Acta Paul Enferm, 2010.",
+        "https://doi.org/10.1590/S0103-21002010000200011"
+      ]
+    ],
+    "cases": [
+      [
+        "Totalmente independente: 100",
+        {
+          "alim": "10",
+          "banho": "5",
+          "higiene": "5",
+          "vestir": "10",
+          "intestino": "10",
+          "bexiga": "10",
+          "vaso": "10",
+          "transf": "15",
+          "mobil": "15",
+          "escadas": "10"
+        },
+        {
+          "score": 100,
+          "level": "low",
+          "verdict": "Independente"
+        }
+      ],
+      [
+        "Independente exceto escadas com ajuda: 95 (leve)",
+        {
+          "alim": "10",
+          "banho": "5",
+          "higiene": "5",
+          "vestir": "10",
+          "intestino": "10",
+          "bexiga": "10",
+          "vaso": "10",
+          "transf": "15",
+          "mobil": "15",
+          "escadas": "5"
+        },
+        {
+          "score": 95,
+          "level": "low",
+          "verdict": "leve"
+        }
+      ],
+      [
+        "Hemiparesia após AVC: 65 (moderada)",
+        {
+          "alim": "10",
+          "banho": "0",
+          "higiene": "5",
+          "vestir": "5",
+          "intestino": "10",
+          "bexiga": "5",
+          "vaso": "5",
+          "transf": "10",
+          "mobil": "10",
+          "escadas": "5"
+        },
+        {
+          "score": 65,
+          "level": "mid",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "Acamado, come com ajuda, continência parcial: 15 (total)",
+        {
+          "alim": "5",
+          "banho": "0",
+          "higiene": "0",
+          "vestir": "0",
+          "intestino": "5",
+          "bexiga": "5",
+          "vaso": "0",
+          "transf": "0",
+          "mobil": "0",
+          "escadas": "0"
+        },
+        {
+          "score": 15,
+          "level": "high",
+          "verdict": "total"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 100",
+      "label": "Índice de Barthel",
+      "fields": [
+        [
+          "alim",
+          "sel",
+          0
+        ],
+        [
+          "banho",
+          "sel",
+          0
+        ],
+        [
+          "higiene",
+          "sel",
+          0
+        ],
+        [
+          "vestir",
+          "sel",
+          0
+        ],
+        [
+          "intestino",
+          "sel",
+          0
+        ],
+        [
+          "bexiga",
+          "sel",
+          0
+        ],
+        [
+          "vaso",
+          "sel",
+          0
+        ],
+        [
+          "transf",
+          "sel",
+          0
+        ],
+        [
+          "mobil",
+          "sel",
+          0
+        ],
+        [
+          "escadas",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "high",
+          "Dependência total (0 a 20)",
+          ""
+        ],
+        [
+          21,
+          "high",
+          "Dependência grave (21 a 60)",
+          ""
+        ],
+        [
+          61,
+          "mid",
+          "Dependência moderada (61 a 90)",
+          ""
+        ],
+        [
+          91,
+          "low",
+          "Dependência leve (91 a 99)",
+          ""
+        ],
+        [
+          100,
+          "low",
+          "Independente (100)",
+          "Pontuação máxima não significa viver sozinho com segurança: o índice não avalia atividades instrumentais, cognição nem segurança."
+        ]
+      ]
+    },
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}
