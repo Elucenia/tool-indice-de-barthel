@@ -1,0 +1,628 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field alim",
+    "input": {
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "alim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field alim",
+    "input": {
+      "alim": "",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "alim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option alim",
+    "input": {
+      "alim": "__ELUCENIA_INVALID_OPTION__",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "alim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field banho",
+    "input": {
+      "alim": "10",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "banho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field banho",
+    "input": {
+      "alim": "10",
+      "banho": "",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "banho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option banho",
+    "input": {
+      "alim": "10",
+      "banho": "__ELUCENIA_INVALID_OPTION__",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "banho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field higiene",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "higiene"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field higiene",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "higiene"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option higiene",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "__ELUCENIA_INVALID_OPTION__",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "higiene"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vestir",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vestir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vestir",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vestir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option vestir",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "__ELUCENIA_INVALID_OPTION__",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "vestir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field intestino",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "intestino"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field intestino",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "intestino"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option intestino",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "__ELUCENIA_INVALID_OPTION__",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "intestino"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field bexiga",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "bexiga"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field bexiga",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "bexiga"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option bexiga",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "__ELUCENIA_INVALID_OPTION__",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "bexiga"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vaso",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vaso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vaso",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vaso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option vaso",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "__ELUCENIA_INVALID_OPTION__",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "vaso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field transf",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "transf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field transf",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "transf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option transf",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "__ELUCENIA_INVALID_OPTION__",
+      "mobil": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "transf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field mobil",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "mobil"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field mobil",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "mobil"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option mobil",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "__ELUCENIA_INVALID_OPTION__",
+      "escadas": "10"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "mobil"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field escadas",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "escadas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field escadas",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "escadas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option escadas",
+    "input": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "escadas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

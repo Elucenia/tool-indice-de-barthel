@@ -1,0 +1,386 @@
+{
+  "id": "indice-de-barthel",
+  "at": "2026-10-05T17:29:47.328Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/indice-de-barthel/calculator.js",
+    "bytes": 6533,
+    "sha256": "865dc9f8c59e8bcd55ad3491707f2dce7e4a80a86cf17369d8ad419f76f3ac2e"
+  },
+  "cases": [
+    {
+      "name": "Totalmente independente: 100",
+      "input": {
+        "alim": "10",
+        "banho": "5",
+        "higiene": "5",
+        "vestir": "10",
+        "intestino": "10",
+        "bexiga": "10",
+        "vaso": "10",
+        "transf": "15",
+        "mobil": "15",
+        "escadas": "10"
+      },
+      "obtained": {
+        "id": "indice-de-barthel",
+        "main": [
+          "100",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 100
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 100,
+          "obtained": 100,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 100,
+          "obtained": 100,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "100",
+          "obtained": "100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 100",
+          "obtained": "de 100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Independente exceto escadas com ajuda: 95 (leve)",
+      "input": {
+        "alim": "10",
+        "banho": "5",
+        "higiene": "5",
+        "vestir": "10",
+        "intestino": "10",
+        "bexiga": "10",
+        "vaso": "10",
+        "transf": "15",
+        "mobil": "15",
+        "escadas": "5"
+      },
+      "obtained": {
+        "id": "indice-de-barthel",
+        "main": [
+          "95",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 95
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 95,
+          "obtained": 95,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 95,
+          "obtained": 95,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "95",
+          "obtained": "95",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 100",
+          "obtained": "de 100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Hemiparesia após AVC: 65 (moderada)",
+      "input": {
+        "alim": "10",
+        "banho": "0",
+        "higiene": "5",
+        "vestir": "5",
+        "intestino": "10",
+        "bexiga": "5",
+        "vaso": "5",
+        "transf": "10",
+        "mobil": "10",
+        "escadas": "5"
+      },
+      "obtained": {
+        "id": "indice-de-barthel",
+        "main": [
+          "65",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 65
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 65,
+          "obtained": 65,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 65,
+          "obtained": 65,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "65",
+          "obtained": "65",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 100",
+          "obtained": "de 100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+      "input": {
+        "alim": "5",
+        "banho": "0",
+        "higiene": "0",
+        "vestir": "0",
+        "intestino": "5",
+        "bexiga": "5",
+        "vaso": "0",
+        "transf": "0",
+        "mobil": "0",
+        "escadas": "0"
+      },
+      "obtained": {
+        "id": "indice-de-barthel",
+        "main": [
+          "15",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 15
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 15,
+          "obtained": 15,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 15,
+          "obtained": 15,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "15",
+          "obtained": "15",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 100",
+          "obtained": "de 100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 34,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

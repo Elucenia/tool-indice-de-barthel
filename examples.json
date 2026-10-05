@@ -1,6 +1,21 @@
 [
   {
-    "label": "Totalmente independente: 100",
+    "id": "indice-de-barthel",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Totalmente independente: 100",
+    "originalInput": {
+      "alim": "10",
+      "banho": "5",
+      "higiene": "5",
+      "vestir": "10",
+      "intestino": "10",
+      "bexiga": "10",
+      "vaso": "10",
+      "transf": "15",
+      "mobil": "15",
+      "escadas": "10"
+    },
     "input": {
       "alim": "10",
       "banho": "5",
@@ -18,6 +33,30 @@
       "level": "low",
       "verdict": "Independente"
     },
+    "recordedResult": {
+      "main": [
+        "100",
+        "de 100"
+      ],
+      "label": "Índice de Barthel",
+      "raw": {
+        "score": 100
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "indice-de-barthel",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Independente exceto escadas com ajuda: 95 (leve)",
     "originalInput": {
       "alim": "10",
       "banho": "5",
@@ -28,12 +67,8 @@
       "vaso": "10",
       "transf": "15",
       "mobil": "15",
-      "escadas": "10"
+      "escadas": "5"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Independente exceto escadas com ajuda: 95 (leve)",
     "input": {
       "alim": "10",
       "banho": "5",
@@ -51,22 +86,42 @@
       "level": "low",
       "verdict": "leve"
     },
-    "originalInput": {
-      "alim": "10",
-      "banho": "5",
-      "higiene": "5",
-      "vestir": "10",
-      "intestino": "10",
-      "bexiga": "10",
-      "vaso": "10",
-      "transf": "15",
-      "mobil": "15",
-      "escadas": "5"
+    "recordedResult": {
+      "main": [
+        "95",
+        "de 100"
+      ],
+      "label": "Índice de Barthel",
+      "raw": {
+        "score": 95
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Hemiparesia após AVC: 65 (moderada)",
+    "id": "indice-de-barthel",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Hemiparesia após AVC: 65 (moderada)",
+    "originalInput": {
+      "alim": "10",
+      "banho": "0",
+      "higiene": "5",
+      "vestir": "5",
+      "intestino": "10",
+      "bexiga": "5",
+      "vaso": "5",
+      "transf": "10",
+      "mobil": "10",
+      "escadas": "5"
+    },
     "input": {
       "alim": "10",
       "banho": "0",
@@ -84,22 +139,42 @@
       "level": "mid",
       "verdict": "moderada"
     },
-    "originalInput": {
-      "alim": "10",
-      "banho": "0",
-      "higiene": "5",
-      "vestir": "5",
-      "intestino": "10",
-      "bexiga": "5",
-      "vaso": "5",
-      "transf": "10",
-      "mobil": "10",
-      "escadas": "5"
+    "recordedResult": {
+      "main": [
+        "65",
+        "de 100"
+      ],
+      "label": "Índice de Barthel",
+      "raw": {
+        "score": 65
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Acamado, come com ajuda, continência parcial: 15 (total)",
+    "id": "indice-de-barthel",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+    "originalInput": {
+      "alim": "5",
+      "banho": "0",
+      "higiene": "0",
+      "vestir": "0",
+      "intestino": "5",
+      "bexiga": "5",
+      "vaso": "0",
+      "transf": "0",
+      "mobil": "0",
+      "escadas": "0"
+    },
     "input": {
       "alim": "5",
       "banho": "0",
@@ -117,18 +192,23 @@
       "level": "high",
       "verdict": "total"
     },
-    "originalInput": {
-      "alim": "5",
-      "banho": "0",
-      "higiene": "0",
-      "vestir": "0",
-      "intestino": "5",
-      "bexiga": "5",
-      "vaso": "0",
-      "transf": "0",
-      "mobil": "0",
-      "escadas": "0"
+    "recordedResult": {
+      "main": [
+        "15",
+        "de 100"
+      ],
+      "label": "Índice de Barthel",
+      "raw": {
+        "score": 15
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
