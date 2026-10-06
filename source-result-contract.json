@@ -1,0 +1,246 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "indice-de-barthel",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "8b2ab5c7efe369511d639bc9832d2e7f0594d8dc",
+    "oldEngineSha256": "865dc9f8c59e8bcd55ad3491707f2dce7e4a80a86cf17369d8ad419f76f3ac2e",
+    "currentEngineSha256": "bb45a146ce7826bcd37f4ccffc46eec128c01bb1d6e9e0154f0ae3ee5edaa3bf"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Totalmente independente: 100",
+      "input": {
+        "alim": "10",
+        "banho": "5",
+        "higiene": "5",
+        "vestir": "10",
+        "intestino": "10",
+        "bexiga": "10",
+        "vaso": "10",
+        "transf": "15",
+        "mobil": "15",
+        "escadas": "10"
+      },
+      "publicOutput": {
+        "id": "indice-de-barthel",
+        "main": [
+          "100",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 100
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 100,
+        "level": "low",
+        "verdict": "Independente"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "100",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "level": "low",
+        "verdict": "Independente (100)",
+        "note": "Pontuação máxima não significa viver sozinho com segurança: o índice não avalia atividades instrumentais, cognição nem segurança.",
+        "raw": {
+          "score": 100
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Independente exceto escadas com ajuda: 95 (leve)",
+      "input": {
+        "alim": "10",
+        "banho": "5",
+        "higiene": "5",
+        "vestir": "10",
+        "intestino": "10",
+        "bexiga": "10",
+        "vaso": "10",
+        "transf": "15",
+        "mobil": "15",
+        "escadas": "5"
+      },
+      "publicOutput": {
+        "id": "indice-de-barthel",
+        "main": [
+          "95",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 95
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 95,
+        "level": "low",
+        "verdict": "leve"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "95",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "level": "low",
+        "verdict": "Dependência leve (91 a 99)",
+        "note": "",
+        "raw": {
+          "score": 95
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Hemiparesia após AVC: 65 (moderada)",
+      "input": {
+        "alim": "10",
+        "banho": "0",
+        "higiene": "5",
+        "vestir": "5",
+        "intestino": "10",
+        "bexiga": "5",
+        "vaso": "5",
+        "transf": "10",
+        "mobil": "10",
+        "escadas": "5"
+      },
+      "publicOutput": {
+        "id": "indice-de-barthel",
+        "main": [
+          "65",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 65
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 65,
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "65",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "level": "mid",
+        "verdict": "Dependência moderada (61 a 90)",
+        "note": "",
+        "raw": {
+          "score": 65
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+      "input": {
+        "alim": "5",
+        "banho": "0",
+        "higiene": "0",
+        "vestir": "0",
+        "intestino": "5",
+        "bexiga": "5",
+        "vaso": "0",
+        "transf": "0",
+        "mobil": "0",
+        "escadas": "0"
+      },
+      "publicOutput": {
+        "id": "indice-de-barthel",
+        "main": [
+          "15",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "raw": {
+          "score": 15
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 15,
+        "level": "high",
+        "verdict": "total"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "15",
+          "de 100"
+        ],
+        "label": "Índice de Barthel",
+        "level": "high",
+        "verdict": "Dependência total (0 a 20)",
+        "note": "",
+        "raw": {
+          "score": 15
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "id": "indice-de-barthel",
+  "implementationVersion": "indice-de-barthel@native-2026-10-05+bb45a146ce78",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Independente (100)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Pontuação máxima não significa viver sozinho com segurança: o índice não avalia atividades instrumentais, cognição nem segurança.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependência leve (91 a 99)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependência moderada (61 a 90)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependência total (0 a 20)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Independent (100)",
+            "locale": "en",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "Maximum score does not mean living alone safely: the index does not assess instrumental activities, cognition, or safety.",
+            "locale": "en",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild dependence (91 to 99)",
+            "locale": "en",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate dependence (61 to 90)",
+            "locale": "en",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Total dependence (0 to 20)",
+            "locale": "en",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Independiente (100)",
+            "locale": "es",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "La puntuación máxima no significa vivir solo con seguridad: el índice no evalúa actividades instrumentales, cognición ni seguridad.",
+            "locale": "es",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependencia leve (91 a 99)",
+            "locale": "es",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependencia moderada (61 a 90)",
+            "locale": "es",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependencia total (0 a 20)",
+            "locale": "es",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indépendant (100)",
+            "locale": "fr",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "Le score maximal ne signifie pas vivre seul en toute sécurité : l’indice n’évalue pas les activités instrumentales, la cognition ni la sécurité.",
+            "locale": "fr",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dépendance légère (91 à 99)",
+            "locale": "fr",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dépendance modérée (61 à 90)",
+            "locale": "fr",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dépendance totale (0 à 20)",
+            "locale": "fr",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unabhängig (100)",
+            "locale": "de",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "Die Höchstpunktzahl bedeutet nicht, sicher allein zu leben: Der Index bewertet keine instrumentellen Aktivitäten, Kognition oder Sicherheit.",
+            "locale": "de",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Abhängigkeit (91 bis 99)",
+            "locale": "de",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Abhängigkeit (61 bis 90)",
+            "locale": "de",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Vollständige Abhängigkeit (0 bis 20)",
+            "locale": "de",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indipendente (100)",
+            "locale": "it",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "Il punteggio massimo non significa vivere da soli in sicurezza: l’indice non valuta le attività strumentali, la cognizione né la sicurezza.",
+            "locale": "it",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dipendenza lieve (91 a 99)",
+            "locale": "it",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dipendenza moderata (61 a 90)",
+            "locale": "it",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dipendenza totale (0 a 20)",
+            "locale": "it",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "مستقل (100)",
+            "locale": "ar",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "الدرجة القصوى لا تعني العيش بمفردك بأمان: المؤشر لا يقيم الأنشطة الأداتية أو الإدراك أو السلامة.",
+            "locale": "ar",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "اعتماد خفيف (91 إلى 99)",
+            "locale": "ar",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "اعتماد متوسط (61 إلى 90)",
+            "locale": "ar",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "اعتماد كلي (0 إلى 20)",
+            "locale": "ar",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "独立（100）",
+            "locale": "zh",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "最高分并不意味着可以安全独居：该指数不评估工具性日常活动、认知或安全性。",
+            "locale": "zh",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度依赖（91到99）",
+            "locale": "zh",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度依赖（61到90）",
+            "locale": "zh",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "完全依赖（0到20）",
+            "locale": "zh",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "自立（100）",
+            "locale": "ja",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "満点だからといって安全に一人暮らしできることを意味するわけではありません。この指標は手段的日常生活動作、認知、安全性を評価しません。",
+            "locale": "ja",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度依存（91～99）",
+            "locale": "ja",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度依存（61～90）",
+            "locale": "ja",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全介助（0～20）",
+            "locale": "ja",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Totalmente independente: 100",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "स्वतंत्र (100)",
+            "locale": "hi",
+            "template": "documented-authored-cbf87fc87a2fdbc74ec7"
+          },
+          "note": {
+            "text": "अधिकतम स्कोर का मतलब सुरक्षित रूप से अकेले रहना नहीं है: यह सूचकांक उपकरणात्मक गतिविधियों, संज्ञान या सुरक्षा का आकलन नहीं करता।",
+            "locale": "hi",
+            "template": "documented-authored-24fdf662944d13e945ce"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Independente exceto escadas com ajuda: 95 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्की निर्भरता (91 से 99)",
+            "locale": "hi",
+            "template": "documented-authored-1fb5e0575058c3412c17"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hemiparesia após AVC: 65 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम निर्भरता (61 से 90)",
+            "locale": "hi",
+            "template": "documented-authored-cbb77c8aeb0d79c66ba3"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado, come com ajuda, continência parcial: 15 (total)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "पूर्ण निर्भरता (0 से 20)",
+            "locale": "hi",
+            "template": "documented-authored-4dd0bf06c5715d5b555a"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

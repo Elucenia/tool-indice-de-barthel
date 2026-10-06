@@ -137,3 +137,29 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Independente (100)
+
+Pontuação máxima não significa viver sozinho com segurança: o índice não avalia atividades instrumentais, cognição nem segurança.
+
+
+### 2
+
+Dependência leve (91 a 99)
+
+
+### 3
+
+Dependência moderada (61 a 90)
+
+
+### 4
+
+Dependência total (0 a 20)
+

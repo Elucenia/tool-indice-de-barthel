@@ -137,3 +137,29 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Independent (100)
+
+Maximum score does not mean living alone safely: the index does not assess instrumental activities, cognition, or safety.
+
+
+### 2
+
+Mild dependence (91 to 99)
+
+
+### 3
+
+Moderate dependence (61 to 90)
+
+
+### 4
+
+Total dependence (0 to 20)
+

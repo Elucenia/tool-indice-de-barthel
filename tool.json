@@ -442,7 +442,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Barthel/Mahoney 1965: 10 atividades, soma 0–100 em múltiplos de 5; mobilidade ≥ 50 jardas (45,72 m); sem a versão modificada de Shah 1989",
-    "implementationVersion": "indice-de-barthel@native-2026-10-04+865dc9f8c59e",
+    "implementationVersion": "indice-de-barthel@native-2026-10-05+bb45a146ce78",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14258950/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -850,7 +850,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "865dc9f8c59e8bcd55ad3491707f2dce7e4a80a86cf17369d8ad419f76f3ac2e",
+      "implementationHash": "bb45a146ce7826bcd37f4ccffc46eec128c01bb1d6e9e0154f0ae3ee5edaa3bf",
       "previousInputContract": {
         "fields": [
           {
@@ -978,7 +978,35 @@
         "previousImplementationHash": "b0586c8331ddb5a9bba3033116400e97f058699515271c407a81de4dd3d34be0",
         "calculationTextSha256": "e3bdcbc7483dfbca9f2eea6a751a482023bb5db15956cadd3349491ea1bc83f6",
         "scope": "Four mobility and three bowel display-label corrections only."
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-de-barthel@native-2026-10-04+865dc9f8c59e",
+          "previousImplementationHash": "865dc9f8c59e8bcd55ad3491707f2dce7e4a80a86cf17369d8ad419f76f3ac2e",
+          "implementationHash": "bb45a146ce7826bcd37f4ccffc46eec128c01bb1d6e9e0154f0ae3ee5edaa3bf",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "a140fc453800c381740fb45b254ea92dd861251338061db47da0877893f77c72",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Use as rubricas da versão 0–100 adotada e registre o momento de avaliação funcional. A versão modificada estudada por Shah em reabilitação após AVC não é intercambiável, item a item, com a original local. A validação brasileira citada ainda requer leitura primária nesta revisão. Na reimpressão do texto de 1965, as definições detalhadas de mobilidade usam pelo menos 50 jardas, equivalentes a 45,72 m, e não mais de 50 m. No controle intestinal, a ausência de acidentes e o uso de supositório/enema sem ajuda, se necessário, permitem 10 pontos; a necessidade de ajuda para supositório/enema ou acidentes ocasionais recebem 5 pontos. Quando os critérios de 5 ou 10 não são preenchidos, a regra geral da reimpressão atribui 0. Conferir a soma não certifica equivalência integral das demais rubricas nem autonomia para viver sozinho.",
     "sourceLimitEvidence": {
@@ -1018,20 +1046,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-de-barthel/calculator.js",
-    "bytes": 6533,
-    "sha256": "865dc9f8c59e8bcd55ad3491707f2dce7e4a80a86cf17369d8ad419f76f3ac2e"
+    "bytes": 6738,
+    "sha256": "bb45a146ce7826bcd37f4ccffc46eec128c01bb1d6e9e0154f0ae3ee5edaa3bf"
   },
-  "sourceToolSha256": "7e1d91b71458d723f136b9ec5a232b726826ef491276896b41955e2f72f01809",
+  "sourceToolSha256": "f922440e96ee251086a90f1480ad180f3ef67ea67d1769ba1ba01997d4ff3829",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "cf8cc17cd716ed3933943a5809ac6457eb30818e9bdb94b71f79717c6ccd592c",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "cf8cc17cd716ed3933943a5809ac6457eb30818e9bdb94b71f79717c6ccd592c",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
